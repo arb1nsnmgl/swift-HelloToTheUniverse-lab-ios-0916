@@ -103,12 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				5B59BC991D6E25EF00DFE0AD /* Greeting.swift */,
-				5B59BC771D6E243800DFE0AD /* AppDelegate.swift */,
-				5B59BC791D6E243800DFE0AD /* ViewController.swift */,
-				5B59BC7B1D6E243800DFE0AD /* Main.storyboard */,
-				5B59BC7E1D6E243800DFE0AD /* Assets.xcassets */,
-				5B59BC801D6E243800DFE0AD /* LaunchScreen.storyboard */,
-				5B59BC831D6E243800DFE0AD /* Info.plist */,
+				A792DD6C1D74B0B800D884A5 /* Supporting Files */,
 			);
 			path = HelloToTheUniverse;
 			sourceTree = "<group>";
@@ -116,8 +111,7 @@
 		5B59BC8B1D6E243800DFE0AD /* HelloToTheUniverseTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B59BC8C1D6E243800DFE0AD /* HelloToTheUniverseTests.swift */,
-				5B59BC8E1D6E243800DFE0AD /* Info.plist */,
+				A792DD6D1D74B0D800D884A5 /* Test Supporting Files */,
 				5B59BC971D6E259300DFE0AD /* GreetingTest.swift */,
 			);
 			path = HelloToTheUniverseTests;
@@ -132,6 +126,28 @@
 				251978D1FD141542A31A4732 /* Pods-HelloToTheUniverseTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A792DD6C1D74B0B800D884A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B59BC771D6E243800DFE0AD /* AppDelegate.swift */,
+				5B59BC791D6E243800DFE0AD /* ViewController.swift */,
+				5B59BC7B1D6E243800DFE0AD /* Main.storyboard */,
+				5B59BC7E1D6E243800DFE0AD /* Assets.xcassets */,
+				5B59BC801D6E243800DFE0AD /* LaunchScreen.storyboard */,
+				5B59BC831D6E243800DFE0AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A792DD6D1D74B0D800D884A5 /* Test Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B59BC8C1D6E243800DFE0AD /* HelloToTheUniverseTests.swift */,
+				5B59BC8E1D6E243800DFE0AD /* Info.plist */,
+			);
+			name = "Test Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,10 +483,12 @@
 			baseConfigurationReference = 041991C3B38FBFE70861BE00 /* Pods-HelloToTheUniverse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelloToTheUniverse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.HelloToTheUniverse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,10 +497,12 @@
 			baseConfigurationReference = 0CD1D56E37B7857AD5A6C3B6 /* Pods-HelloToTheUniverse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelloToTheUniverse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.HelloToTheUniverse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
